@@ -1,0 +1,286 @@
+/* || GENERAL STYLES */
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #012970;
+  margin-bottom: 0rem;
+}
+
+/* || HTML & BODY */
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #85BAEE;
+  color: #444444;
+  font-size:1.5rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.mainbody {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(11, auto);
+  grid-template-areas:
+    "mainheader mainheader"
+    "warnings warnings"
+    "weather weather"
+    "videofcst videofcst"
+    "audiofcst audiofcst"
+    "briefings briefings"
+    "outlook outlook"
+    "climate climate"
+    "reports reports"
+    "blog blog"
+    "mainfooter mainfooter";
+}
+
+/* || MAIN HEADER AND NAVIATION */
+
+/* || Header */
+
+.mainheaderbox {
+  grid-area: mainheader;
+  display: grid;
+  background-color: #172344;
+}
+
+/* || Navigation */
+
+.main-navbox {
+  padding: 1.1rem 0rem 0rem 1.1rem;
+}
+
+.metlogotextbox {
+  font-family: 'Suez One', serif;
+  color: #fbbf24;
+  font-size: 2.4rem;
+}
+
+/* || SECTIONS */
+
+.main-section {
+padding: 1.1rem;
+}
+
+/* || Warnings */
+
+.warningsbox {
+  display: grid;
+  grid-area: warnings;
+}
+
+/* || Weather */
+
+.weatherbox {
+  display: grid;
+  grid-area: weather;
+  color: #172344;
+ }
+
+.forecastinfo {
+  float: left;
+}
+
+.fcst-nav-bar {
+  padding: 0.3rem;
+  border-bottom: none;
+}
+
+.main-wxinfo {
+  display: flex;
+  flex-direction: row;
+}
+
+.hr-y {
+  min-height: 100%;
+  max-height: 100vh;
+  margin: 0;
+}
+
+/* || Video Forecast */
+
+.accordion-style {
+  background-color: #1d4b87;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: bold;
+ }
+
+.videofcstbox {
+  display: grid;
+  grid-area: videofcst;
+  margin-top: 1rem;
+ }
+
+/* || Audio Forecast */
+
+.audiofcstbox {
+  display: grid;
+  grid-area: audiofcst;
+  margin-top: 1rem;
+ }
+
+/* || Daily Briefing */
+
+.briefingsbox {
+  display: grid;
+  grid-area: briefings;
+  color: #172344;
+  margin-top: 2rem;
+ }
+
+/* || Weather Outlook */
+
+.outlookbox {
+  display: grid;
+  grid-area: outlook;
+  border-radius: 0px 3px 0px 0px;
+  color: #172344;
+  margin-top: 2rem;
+ }
+
+/* || Climate */
+
+.climatebox {
+  display: grid;
+  grid-area: climate;
+  color: #172344;
+}
+
+/* || Reports */
+
+.reportsbox {
+  display: grid;
+  grid-area: reports;
+  color: #172344;
+  border-radius: 0px 0px 0px 0px;
+ }
+ 
+
+/* || Blog */
+
+.blogbox {
+  display: grid;
+  grid-area: blog;
+  border-radius: 0px 0px 3px 0px;
+  color: #172344;
+ }
+
+.nav-links-style {
+ font-weight: bold;
+}
+
+.box-body {
+ padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+}
+
+.date-below {
+ margin-bottom: 0rem;
+}
+
+.date-updated {
+ font-size: 1.3rem;
+}
+
+/* || Footer */
+
+footer {
+  grid-area: footer;
+  display: grid;
+  grid-template-rows: auto auto;
+  text-align: center;
+  background-color: #172344;
+  color: #f9fafb;
+  padding: 0rem;
+  margin: 2rem 0 0 0;
+}
+
+.mainfooterbox {
+  display: grid;
+  grid-area: mainfooter; 
+ }
+
+.metlogofooter {
+  font-family: 'Suez One', serif;
+  color: #fbbf24;
+  font-size: 3.0rem;
+}
+
+.footertop {
+  background-color: #1d4b87;
+  margin: 0rem;
+}
+
+.copyright {
+  padding: 1rem;
+}
+
+/* || IMAGES */
+
+.warningsimg {
+  width: 8.0rem;
+  height: 8.0rem;
+  margin-right: 0.2rem;
+}
+
+.videofcstimg {
+  float: left;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin: 0.4rem 0.5rem 0rem 0rem;
+}
+
+.audiofcstimg {
+  float: left;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin: 0.4rem 0.5rem 0rem 0rem;
+}
+
+.briefingsimg {
+  float: left;
+  width: 13.0rem;
+  height: 9.0rem;
+  margin: 0rem 0.5rem 0rem 0rem;
+}
+
+.outlookimg {
+  float: left;
+  width: 8.0rem;
+  height: 8.0rem;
+  margin: 0rem 0.5rem 0rem 0rem;
+}
+
+.climateimg {
+  float: left;
+  width: 8.0rem;
+  height: 8.0rem;
+  margin: 0rem 0.5rem 0rem 0rem;
+}
+
+.reportsimg {
+  float: left;
+  width: 8.0rem;
+  height: 8.0rem;
+  margin: 0rem 0.5rem 0rem 0rem;
+}
+
+.blogimg {
+  float: left;
+  width: 8.0rem;
+  height: 8.0rem;
+  margin: 0rem 0.5rem 0rem 0rem;
+}
