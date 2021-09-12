@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Eugine Whint">
+  <meta name="description"
+    content="The Grenada Meteorological Service provide weather, climate and disaster information for public, aviation and goverment needs.">
+
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+  <link href="styles/styles.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
+
+  <script src="scripts/main.js" defer></script>
+  <title>Grenada Meteorological Service</title>
+</head>
+
+<body class="mainbody">
+
+  <header class="mainheaderbox">
+      <nav class="main-navbox navbar navbar-expand-lg">
+          <a class="navbar-brand" href="$">
+              <img class="metlogo" src="images/logos/cloudy.png" with="50px" height="50px" >
+              <span class="metlogotextbox">GrenMet</span>
+          </a>
+  
+          <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <div class="navbar-nav ms-auto">
+                  <a class="nav-item nav-link" href="#">Weather</a>
+                  <a class="nav-item nav-link" href="">Forecast</a>
+                  <a class="nav-item nav-link" href="">Satellite</a>
+                  <a class="nav-item nav-link" href="">Radar</a>
+
+                  <p>Products & Services</p>
+                  <a class="nav-item nav-link" href="">Watches & Warnings</a>
+                  <a class="nav-item nav-link" href="">Daily Briefing</a>
+                  <a class="nav-item nav-link" href="">Tropical Weather Outlook</a>
+                  <a class="nav-item nav-link" href="">Reports</a>
+                  <a class="nav-item nav-link" href="">Climate</a>
+                  <a class="nav-item nav-link" href="">Aviation</a>
+                  <a class="nav-item nav-link" href="">Earthquakes & Tsunami</a>
+                  <a class="nav-item nav-link" href="">Instruments</a>
+
+                  <p>Resources</p>
+                  <a class="nav-item nav-link" href="">Glossary</a>
+                  <a class="nav-item nav-link" href="">Useful Links</a>                  
+                  <a class="nav-item nav-link" href="">FAQs</a>
+                  <a class="nav-item nav-link" href="">Blog</a>
+
+                  <p>About Us</p>
+                  <a class="nav-item nav-link" href="">History & Background</a>
+                  <a class="nav-item nav-link" href="">Vision & Mission</a>
+                  <a class="nav-item nav-link" href="">Careers</a>
+
+                  <a class="nav-item nav-link" href="">Contact Us</a>
+            </div>
+          </div>
+      </nav>
+  </header>
+          
+  <section class="container main-section">
+      
+      <section class="box warningsbox">
+          <div class="alert alert-primary" role="alert">
+              A simple primary alert—check it out!
+          </div>
+      </section>
+
+      <section class="card box weatherbox">
+
+          <nav>
+              <ul class="nav nav-tabs fcst-nav-bar">
+                  <ul class="nav nav-tabs nav-links-style">
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Weather</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Forecast</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Satellite</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Radar</a>
+                      </li>
+                  </ul>
+              </ul>
+          </nav>
+
+          <article class="box">
+              <p>Current conditions</p>
+              <hr>
+              <div class="main-wxinfo">
+                <p>Main info</p>
+                <hr class="hr-y">
+                <p>Main info 2</p>
+              </div>
+
+              <p>Additional info</p>
+              <hr>
+
+          </article>
+
+      </section>
+
+
+      <div class="accordion accordion-flush box videofcstbox" id="accordionFlushExample">
+
+          <div class="accordion-item accordion-style">
+              <h2 class="accordion-header accordion-style" id="flush-headingOne">
+                  <button class="accordion-button collapsed accordion-style" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      <img class="audiofcstimg" src="images/volume.png">Video Forecast
+                  </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse accordion-style"
+                  aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body accordion-style">Watch video forecast here</div>
+              </div>
+          </div>
+      </div>
+
+      
+      <div class="accordion accordion-flush box audiofcstbox" id="accordionFlushExample">
+
+          <div class="accordion-item accordion-style">
+              <h2 class="accordion-header accordion-style" id="flush-headingOne">
+                  <button class="accordion-button collapsed accordion-style" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      <img class="audiofcstimg" src="images/volume.png">Audio Forecast
+                  </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse accordion-style"
+                  aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body accordion-style">Watch video forecast here</div>
+              </div>
+          </div>
+      </div>
+
+      <section class="card box briefingsbox border-info">
+          <article class="card-body ">
+              <img class="briefingsimg" src="images/placeholder.jpg">
+              <h3>Daily Briefing</h3>
+              <p class="date-below">Tropical wave to impact Grenada Friday.</p>
+              <p class="date-updated">Updated 8:00 p.m.</p>
+          </article>
+      </section>
+
+      <section class="card box outlookbox">
+          <article class="card-body">
+              <img class="outlookimg" src="images/placeholder.jpg">
+              <h3>Weather Outlook</h3>
+              <p>TS Danny expected to become major hurricane tomorrow.</p>
+          </article>
+
+      </section>
+
+      <section class="card box climatebox">
+          <article class="card-body">
+              <img class="climateimg" src="images/placeholder.jpg">
+              <h3>Climate</h3>
+              <p>A record breaking rainfall for August.</p>
+          </article>
+
+      </section>
+
+      <section class="card box reportsbox">
+          <article class="card-body">
+              <img class="reportsimg" src="images/placeholder.jpg">
+              <h3>Reports</h3>
+              <p>How do we prepare for a Tsunami?</p>
+          </article>
+
+      </section>
+
+      <section class="card box blogbox">
+          <article class="card-body">
+              <img class="blogimg" src="images/placeholder.jpg">
+              <h3>Blog</h3>
+              <p>What is a gust font?</p>
+          </article>
+      </section>
+  </section>
+
+  <footer class="mainfooterbox">
+      <div class="footertop">
+          <span>
+              <span><a href="#"><img src="images/logos/cloudy.png" with="90px" height="90px"></a></span>
+              <span>
+                <a href="#"><p class="metlogofooter">GrenMet</p></a>
+                  <br>
+                  <p>
+                    <a href="#"><img src="images\socialmedia/001-facebook.png" width="35px" height="35px"></a>
+                    <a href="#"><img src="images\socialmedia/003-whatsapp.png" width="35px" height="35px"></a>
+                    <a href="#"><img src="images\socialmedia/011-instagram.png" width="35px" height="35px"></a>
+                    <a href="#"><img src="images\socialmedia/013-twitter.png" width="35px" height="35px"></a>
+                  </p><br>
+              </span>
+
+              <span>
+                  <a href="#">Advisories</a> - <a href="#">NaDMA</a><br>
+                  <a href="#">Daily Briefing</a> - <a href="#">Impact Forecast</a><br>
+                  <a href="#">About Us</a> - <a href="#">Contact Us</a><br>
+                  <a href="#">Blog</a> - <a href="#">Useful Links</a>
+              </span><br><br>
+              <br>
+          </span>
+      </div>
+
+      <div class="copyright">
+          
+          <span class="gaalogobox"><a href="#"><img src="images/logos/gaalogo.png"
+            alt="The Grenada Airports' Authority Official Logo"></a></span>
+          <span>
+              <p>This information is provided for your own personal non-commercial use in accordance with the
+                  Grenada Meteorological Service website <a href="#">terms and conditions</a>.</p><br>
+              <p>Copyright <a href="#">Grenada Airports Authority</a> 2022</p>
+          </span>
+      </div>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+
+</body>
+</html>
