@@ -142,7 +142,15 @@ padding: 1.1rem;
   margin-top: 2rem;
  }
 
+ .briefing-card-style {
+  padding: 0.2rem;
+}
+
 /* || Weather Outlook */
+
+.card-style {
+  padding: 0.2rem;
+}
 
 .outlookbox {
   display: grid;
@@ -224,8 +232,18 @@ footer {
   margin: 0rem;
 }
 
+.footertop-links {
+  color: #fff;
+  text-decoration: none;
+}
+
 .copyright {
+  font-size: 1.2rem;
   padding: 1rem;
+}
+
+.copyright-links {
+  color: #fff;
 }
 
 /* || IMAGES */
